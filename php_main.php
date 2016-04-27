@@ -11,6 +11,6 @@ require_once 'vendor/autoload.php';
 $user = "viperphase1";
 $org = "tmgOrganization1";
 $client = new \Github\Client();
-$repositories = $client->api($user)->repositories($org);
+$repositories = $client->api('user')->repositories('tmgOrganization1');
 print_r($repositories);
 ?>
